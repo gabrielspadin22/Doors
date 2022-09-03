@@ -1,4 +1,5 @@
 body{
+    overflow: hidden;
     margin: 0;
     box-sizing: border-box;
     cursor:default;
@@ -17,11 +18,13 @@ body{
     bottom: 0;
     font-weight: lighter;
     position: absolute;
+    z-index: 20;
 }
 .barra_herramientas_hover:hover{
     background-color: rgb(58, 58, 58);
 }
 .inicio{
+    z-index: 10;
     bottom: 56px;
     position: absolute;
     width: max-content;
@@ -69,23 +72,33 @@ body{
     line-height: 0.8;
 }
 .hover_grey:hover{
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(58, 58, 58) !important;
 }
 .p_2_5{
     padding: 12px;
 }
+.fs_6_5{
+    font-size: 15px;
+}
+.fs_7{
+    font-size: 14px;
+}
+.overflowX{
+    overflow-x: scroll;
+}
 .door{
     position: absolute;
-    width: 500px;
+    width: 800px;
     height: 500px;
-    background-color: rgb(29, 29, 29);
+    background-color: rgba(29, 29, 29, 0.919);
+    
 }
 .maximizar_puerta{
     position: absolute;
     left: 0 !important;
     top: 0 !important;
     width: 100vw;
-    height: 93vh;
+    height: 78vh;
 }
 #barra_top_puerta{
     width: 100%;
@@ -96,4 +109,56 @@ body{
     background: -webkit-radial-gradient(circle, rgba(255,42,42,1) 0%, rgba(255,0,0,0.742734593837535) 100%);
     background: radial-gradient(circle, rgba(255,42,42,1) 0%, rgba(255,0,0,0.742734593837535) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff2a2a",endColorstr="#ff0000",GradientType=1);  
+}
+.ubicaciones{
+    width: 150px;
+}
+.contenido{
+    height: 100%;
+    width: 100%;
+}
+.buscadorEquipo{
+    width: 100%;
+    outline: none;
+    font-size: 13px;
+    border: none;
+}
+.no_border{
+    border: none !important;
+}
+.foto{
+    border-radius: 100%;
+    width: 25px;
+}
+.pdf{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background-color: rgba(29, 29, 29, 0.919);
+}
+.maximizar_pdf{
+    position: absolute;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100vw;
+    height: 100vh;
+}
+.font_title{
+    font-size: 90px;
+    font-family: sans-serif;
+}
+.pestaña{
+    border-radius: 11px 11px 0px 0px;
+    width: max-content;
+}
+.imgs{
+    border-radius: 100%;
+    margin: 30px;
+    width: 90px;
+    border: 1px solid rgba(255, 255, 255, 0.852);
+}
+.hover_white_shadow:hover{
+    box-shadow: 0px 0px 7px 1px rgba(255,255,255,0.75);
+-webkit-box-shadow: 0px 0px 7px 1px rgba(255,255,255,0.75);
+-moz-box-shadow: 0px 0px 7px 1px rgba(255,255,255,0.75);
 }

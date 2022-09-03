@@ -12,10 +12,11 @@
 <body">
     <!------------------- FONDO DE PANTALLA ------------------->
     <img id="click_desktop" class="bg-desktop " src="https://media.istockphoto.com/photos/slightly-open-door-in-a-dark-room-picture-id1334844558?k=20&m=1334844558&s=612x612&w=0&h=mAdciPougu1CSW_oiWgHVfkzA5EQ07BdH5R6FVD6Rxk=" alt="">
-    
     <!------------------- ESCRITORIO ------------------->
     <div class="card-group " id="click_desktop2">
-        <!------------------- ICONOS ------------------->
+        
+        
+        <!------------------- ICONOS / CARPETAS ------------------->
         <div class="card bg-transparent border-0 mx-0" >
             <div class="card-body icono my-3 mx-0">
                 <i class="bi bi-folder-fill fs-2 text-warning"></i>
@@ -28,28 +29,22 @@
                 <p class="card-text nombre_icono"><small class="text-light">Music</small></p>
             </div>
         </div>
-        <div class="card bg-transparent border-0 mx-0">
+        <div class="card bg-transparent border-0 mx-0" id="gabriel_resume">
             <div class="card-body icono my-3 mx-0">
-                <i class="bi bi-folder-fill fs-2 text-warning"></i>
-                <p class="card-text nombre_icono"><small class="text-light">Fotos</small></p>
+                <i class="bi bi-file-earmark-pdf fs-2 text-danger"></i>
+                <p class="card-text nombre_icono"><small class="text-light">Gabriel's resume</small></p>
             </div>
         </div>
-        <div class="card bg-transparent border-0 mx-0">
+        <div class="card bg-transparent border-0 mx-0" id="chrome">
             <div class="card-body icono my-3 mx-0">
-                <i class="bi bi-folder-fill fs-2 text-warning"></i>
-                <p class="card-text nombre_icono"><small class="text-light">asdasd</small></p>
+                <i class="bi bi-browser-chrome fs-2 text-light"></i>
+                <p class="card-text nombre_icono"><small class="text-light">Google Chrome</small></p>
             </div>
         </div>
         <div class="card bg-transparent border-0 mx-0">
             <div class="card-body icono my-3 mx-0">
                 <i class="bi bi-folder-fill fs-2 text-warning"></i>
                 <p class="card-text nombre_icono"><small class="text-light">Repos</small></p>
-            </div>
-        </div>
-        <div class="card bg-transparent border-0 mx-0">
-            <div class="card-body icono my-3 mx-0">
-                <i class="bi bi-folder-fill fs-2 text-warning"></i>
-                <p class="card-text nombre_icono"><small class="text-light">Secretos de estado</small></p>
             </div>
         </div>
         <div class="card bg-transparent border-0 mx-0">
@@ -71,7 +66,6 @@
             </div>
         </div>
     </div>
-    
     <!------------------- INICIO Y BARRA DE HERRAMIENTAS ------------------->
     <div class="">
         <!------------------- INICIO ------------------->
@@ -79,7 +73,7 @@
             <!------------------- ICONOS ------------------->
             <div class="mt-1 text-light">
                 <div class="mb-5 hover_grey p_2_5"><i class="bi bi-list fs-4"></i></div>
-                <div class="hover_grey p_2_5"><i class="bi bi-person-circle fs-5"></i></div>
+                <div class="hover_grey p_2_5"><img class="foto" src="images/yo.jpg" alt="" srcset=""></div>
                 <div class="hover_grey p_2_5"><i class="bi bi-file-earmark fs-5"></i></div>
                 <div class="hover_grey p_2_5"><i class="bi bi-card-image fs-5"></i></div>
                 <div class="hover_grey p_2_5"><i class="bi bi-gear fs-5"></i></div>
@@ -112,7 +106,6 @@
                 <div class="hover_grey py-1 pe-5"><i class="bi bi-steam fs-5 text-blue mx-2"></i><small>Steam</small></div>
             </div>
         </div>
-
         <!------------------- BARRA DE HERRAMIENTAS ------------------->
         <div class="barra_herramientas d-flex text-center text-light bg-dark">
             <!------------------- APPS Y PESTAÑAS ------------------->
@@ -123,6 +116,7 @@
             <div class="p-1 px-3 d-flex barra_herramientas_hover"><i class="bi bi-browser-chrome fs-5 my-auto px-1"></i></div>
             <div class="p-1 px-3 d-flex barra_herramientas_hover"><i class="bi bi-steam fs-5 my-auto px-1 text-blue"></i></div>
             <div class="p-1 px-3 d-flex barra_herramientas_hover"><i class="bi bi-discord fs-5 my-auto px-1 text-discord"></i></div>
+            <div class="  d-flex barra_herramientas_hover " id="open_door"></div>
             <!------------------- ICONOS DE UTILIDADES ------------------->
             <div class="ms-auto p-1 px-1 d-flex fs-5 barra_herramientas_hover"><div class="my-auto">^</div></div>
             <div class="p-1 px-1 d-flex barra_herramientas_hover"><i class="bi bi-volume-up fs-5 my-auto px-1"></i></div>
@@ -137,15 +131,8 @@
             <div class="p-1 border-start barra_herramientas_hover"></div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </body>
 </html>

@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    cursor:default;
+}
+.text-purple{
+    color: rgb(132, 0, 255);
+}
+.text-discord{
+    color: rgb(134, 102, 221);
+}
+.text-blue{
+    color: rgb(0, 53, 138);
+}
+.barra_herramientas{
+    width: 100%;
+    bottom: 0;
+    font-weight: lighter;
+    position: absolute;
+}
+.barra_herramientas_hover:hover{
+    background-color: rgb(58, 58, 58);
+}
+.inicio{
+    bottom: 56px;
+    position: absolute;
+    width: max-content;
+    height: 380px;
+    display: none;
+}
+.overflowY{
+    overflow-y: scroll;
+}
+.overflowY::-webkit-scrollbar {
+    background-color: rgba(58, 58, 58, 0);
+    width: 2px;
+}
+.overflowY::-webkit-scrollbar-thumb {
+    background: rgba(204, 204, 204, 0.543);
+    border-radius: 4px;
+    display: none;
+}
+.inicio:hover > .overflowY::-webkit-scrollbar-thumb{
+    display: block;
+}
+.bg-desktop{
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+.icono{
+    border-radius: 0;
+    background-color: transparent;
+    max-width: max-content;
+    border: none;
+    margin-inline: 20px;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.icono:hover{
+    border: 1px solid white;
+    background-color: rgba(105, 105, 105, 0.076);
+}
+.card{
+    max-width: min-content;
+}
+.nombre_icono{
+    font-size: 15px;
+    line-height: 0.8;
+}
+.hover_grey:hover{
+    background-color: rgb(58, 58, 58);
+}
+.p_2_5{
+    padding: 12px;
+}
+.door{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(29, 29, 29);
+}
+.maximizar_puerta{
+    position: absolute;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100vw;
+    height: 93vh;
+}
+#barra_top_puerta{
+    width: 100%;
+}
+.btn_cerrar:hover{
+    background: rgb(255,42,42);
+    background: -moz-radial-gradient(circle, rgba(255,42,42,1) 0%, rgba(255,0,0,0.742734593837535) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,42,42,1) 0%, rgba(255,0,0,0.742734593837535) 100%);
+    background: radial-gradient(circle, rgba(255,42,42,1) 0%, rgba(255,0,0,0.742734593837535) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff2a2a",endColorstr="#ff0000",GradientType=1);  
+}

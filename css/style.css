@@ -1,8 +1,14 @@
 body{
+    height: 100vh;
     overflow: hidden;
     margin: 0;
     box-sizing: border-box;
     cursor:default;
+    user-select: none; /* Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
 }
 .text-purple{
     color: rgb(132, 0, 255);
@@ -30,6 +36,33 @@ body{
     width: max-content;
     height: 380px;
     display: none;
+}
+.wifi{
+    z-index: 10;
+    right: 0;
+    bottom: 56px;
+    position: absolute;
+    width: 28%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+.wifi_config{
+    margin-right: 5px;
+    padding: 6px;
+    width: 85px;
+}
+.hover_color_white{
+    color: grey;
+}
+.hover_color_white:hover{
+    color: rgba(255, 255, 255, 0.657);
+}
+.hover_border{
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.hover_border:hover{
+    border: 1px solid white;
 }
 .overflowY{
     overflow-y: scroll;
@@ -82,6 +115,9 @@ body{
 }
 .fs_7{
     font-size: 14px;
+}
+.fs_8{
+    font-size: 12px;
 }
 .overflowX{
     overflow-x: scroll;
@@ -156,6 +192,9 @@ body{
     margin: 30px;
     width: 90px;
     border: 1px solid rgba(255, 255, 255, 0.852);
+}
+.imgs_vista_previa{
+    width: 80px;
 }
 .hover_white_shadow:hover{
     box-shadow: 0px 0px 7px 1px rgba(255,255,255,0.75);

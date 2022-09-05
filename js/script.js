@@ -228,7 +228,7 @@ let PuertaPdf = `
         <div class="p-2 hover_grey " id="ampliar_puerta_pdf">❒</div>
         <div class="p-2 btn_cerrar " id="cerrar_puerta_pdf">X</div>
     </div>
-    <iframe src="documents/Gabriel's Resume.pdf" style="width:100%; height:88%;" frameborder="0" ></iframe>
+    <iframe src="https://www.gabrielspadindev.com.ar/cv/Gabriel's%20Resume.pdf" style="width:100%; height:88%;" frameborder="0" ></iframe>
 `;
 // --------------------- NavegaDoor Chrome ------------------------------
 let iconoPuertaChrome = `<i class="my-auto pt-2 bi bi-browser-chrome fs-5 px-3"></i>`;
